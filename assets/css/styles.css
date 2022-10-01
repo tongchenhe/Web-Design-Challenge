@@ -44,19 +44,14 @@ p{
 
 
 
-.box1{
+.box{
     position: relative;
     padding-top: 50px;
     padding-bottom: 50px;
+    padding-left: 25px;
+    padding-right: 25px;
     border-color: rgb(118, 118, 118);
     border-right-width: 50px;
-
-}
-.box2{
-    position: relative;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    
 }
 
 

@@ -2,15 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title> Latitude vs. X Summary</title>
+    <title> Latitude vs. Wind Speed</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
 </head>
 <body>
     <div class="background">
     <!-- Navbar Header, Same for every page -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-custom">
-        <a class="navbar-brand" href="index.html" id="top-left">Latitude</a>
+        <a class="navbar-brand" href="../index.html" id="top-left">Latitude</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -22,17 +22,17 @@
                   Plots
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="visualizations/maxtemp.html">vs. Max Temp</a>
-                    <a class="dropdown-item" href="visualizations/humidity.html">vs. Humidity</a>
-                    <a class="dropdown-item" href="visualizations/cloudiness.html">vs. Cloudiness</a>
-                    <a class="dropdown-item" href="visualizations/windspd.html">vs. Wind Spd</a>
+                    <a class="dropdown-item" href="maxtemp.html">vs. Max Temp</a>
+                    <a class="dropdown-item" href="humidity.html">vs. Humidity</a>
+                    <a class="dropdown-item" href="cloudiness.html">vs. Cloudiness</a>
+                    <a class="dropdown-item" href="windspd.html">vs. Wind Spd</a>
                 </div>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="comparison.html">Comparison</a>
+              <a class="nav-link" href="../comparison.html">Comparison</a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="data.html">Data</a>
+              <a class="nav-link" href="../data.html">Data</a>
             </li>
             
           </ul>
@@ -46,20 +46,15 @@
                 <!-- Homepage Summary -->
                 <div class="col-md-7 box ">
                     <h1>
-                        Summary: Latitude vs. X
+                        Wind Speed
                     </h1>
                     <hr>
                     <br>
-                    <img src="assets/images/vsMaxTemp.png" width="40%" ALIGN=left alt="Latitude vs. Max Temperature">
+                    <img src="../assets/images/vsWindSpd.png" width="100%" ALIGN=left alt="Latitude vs. Humidity">
                     <p>
-                        
-                        The purpose of this project was to analyze how eather changes as you get closer to the equator. 
-                        To accomplish this analysis, we firts pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.
-                        <br>
-                        <br>
-                        After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude.
-                        Factors we looked at include: temperature, cloudiness, wind speed, and humdity.
-                        This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends.
+                        With our current analysis, there is no obvious relationship between latitude and wind speed,
+                        so further analysis is needed. It is easy to see that there may be some correlation, notice that a 
+                        much larger number of cities in the northern hemisphere report over 20 mph of wind speed.
                     </p>
                 </div>
 
@@ -71,7 +66,6 @@
 
 
 
-                <!-- Homepage Visualizations -->
                 <div class="col-md-4 box">
                     <h1>
                         Visualizations
@@ -81,25 +75,25 @@
                     <section id="img-area">
                         <div class="img-row">
                             <div class="img-column">
-                                <a href="visualizations/maxtemp.html">
-                                    <img src="assets/images/vsMaxTemp.png" alt="Latitude vs. Max Temperature" style="width:100%">
+                                <a href="maxtemp.html">
+                                    <img src="../assets/images/vsMaxTemp.png" alt="Latitude vs. Max Temperature" style="width:100%">
                                 </a>
                             </div>
                             <div class="img-column">
-                                <a href="visualizations/humidity.html">
-                                    <img src="assets/images/vsHumidity.png" alt="Latitude vs. Humidity" style="width:100%">
+                                <a href="humidity.html">
+                                    <img src="../assets/images/vsHumidity.png" alt="Latitude vs. Humidity" style="width:100%">
                                 </a>
                             </div>
                         </div>
                         <div class="img-row">
                             <div class="img-column">
-                                <a href="visualizations/cloudiness.html">
-                                    <img src="assets/images/vsCloudiness.png" alt="Latitude vs. Cloudiness" style="width:100%">
+                                <a href="cloudiness.html">
+                                    <img src="../assets/images/vsCloudiness.png" alt="Latitude vs. Cloudiness" style="width:100%">
                                 </a>
                             </div>
-                            <div class="img-column">
-                                <a href="visualizations/windspd.html">
-                                    <img src="assets/images/vsWindSpd.png" alt="Latitude vs. Wind Speed" style="width:100%">
+                            <div class="img-column cur-viz">
+                                <a href="windspd.html">
+                                    <img src="../assets/images/vsWindSpd.png" alt="Latitude vs. Wind Speed" style="width:100%">
                                 </a>
                             </div>
                         </div>

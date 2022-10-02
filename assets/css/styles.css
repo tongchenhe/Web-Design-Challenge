@@ -22,10 +22,23 @@
 #top-left:hover{
     opacity: 0.7;
 }
+.active{
+    color: black
+}
 
+.navbar{
+    background-color: white;
+}
+
+
+.nav-link{
+    color:black;
+}
 .nav-item:hover{
     background-color:#4aaaa5;
 }
+
+
 
 
 h1{
@@ -92,23 +105,35 @@ p{
     }
     .navbar{
         padding-left: 0;
-        background-color: #4aaaa5;
     }
-    .navbar-light{
 
-        background-color: #4aaaa5;
+    .nav-link{
+        color: white
     }
+
     .navbar-custom{
-
+        color: white;
         background-color: #4aaaa5;
     }
-    .bg-light{
+    
+    .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 
-        background-color: #4aaaa5;
     }
-    .navbar-toggler{
-        background-color:  #4aaaa5;
-        
+      
+    .navbar-toggler {
+        border-color: rgb(255, 255, 255);
+      } 
+    
+    .dropdown-menu{
+        background-color: #4aaaa5;
+
+    }
+    .dropdown-item{
+        color: white;
+    }
+    .dropdown-item:hover{
+        opacity: 0.4;
     }
     #top-left{
         margin-left: 0;
